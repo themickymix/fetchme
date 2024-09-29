@@ -29,31 +29,7 @@ async function tery() {
               </div>
             </div>
           </div>
-   <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div>Chat</div>
-                </div>
 
-                <!-- Vertical Divider -->
-                <div class="col-auto">
-                    <div class="vertical-divider"></div>
-                </div>
-
-                <div class="col">
-                    <div>Add to cart</div>
-                </div>
-
-                <!-- Vertical Divider -->
-                <div class="col-auto">
-                    <div class="vertical-divider"></div>
-                </div>
-
-                <div class="col btn-success">
-                    <button type="button" class="btn btn-success">BUY NOW</button>
-                </div>
-            </div>
-        </div>
         </div>
       `;
       // Append the card to the test element
