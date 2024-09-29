@@ -20,13 +20,14 @@ async function tery() {
               }" loading="lazy" class="card-img-top" alt="${product.title}">
             </div>
             <div class="card-body">
-              <h6 class="card-title fs-card-title two-line-clamp">${
-                product.title
-              }</h6>
-              <div class="fs-card-price">
+<div class="fs-card-price">
                 <span class="currency">₱</span>
                 <span class="price">${product.price.toFixed(2)}</span>
               </div>
+              <h6 class="card-title fs-card-title two-line-clamp">${
+                product.title
+              }</h6>
+              
             </div>
           </div>
 
