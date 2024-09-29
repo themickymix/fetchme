@@ -33,8 +33,11 @@ async function tery() {
       `;
       // Append the card to the test element
       test.innerHTML += card; // Concatenate the card HTML
+         AutoRefresh(5000);
     });
   } catch (error) {
+    test.innerHTML = "Check your internet connection...";
+   AutoRefresh(5000);
     console.error("Error fetching data:", error); // Log any errors
   }
 }
@@ -43,6 +46,15 @@ async function tery() {
 function openProductPage(productId) {
   window.location.href = `product.html?id=${productId}`; // Redirect to product page with the product ID
 }
+
+function AutoRefresh(t) {
+  if (!navigator.onLine) {
+    setTimeout(() => location.reload(true), t);
+  }
+}
+
+// Call the function and pass the time interval (5000 ms = 5 seconds)
+
 
 tery(); // Call the function to execute it
 //this is new
