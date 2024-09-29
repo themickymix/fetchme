@@ -24,9 +24,9 @@ async function tery() {
                 <span class="currency">₱</span>
                 <span class="price">${product.price.toFixed(2)}</span>
               </div>
-              <h6 class="card-title fs-card-title two-line-clamp">${
+              <h5 class="card-title fs-card-title two-line-clamp">${
                 product.title
-              }</h6>
+              }</h5>
               
             </div>
           </div>
