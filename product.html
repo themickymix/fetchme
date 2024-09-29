@@ -9,7 +9,7 @@
     <title>Product Details</title>
 </head>
 
-<body>
+<body class="d-flex justify-content-center">
     <style>
         .ime {
             padding: 2rem;
@@ -17,25 +17,68 @@
         }
 
         @media only screen and (min-width: 900px) {
-
             .ime {
-
                 padding: 5rem;
                 width: 100%;
                 height: 70%;
-
             }
 
             .maindiv {
-                width: 80%;
+                width: 100vw; /* Full width of the viewport */
             }
+        }
+
+        /* Adjusts the height of the dividers to fill column space */
+        .vertical-divider {
+            border-left: 1px solid #000;
+            height: 70%; /* Fills the available column height */
+            margin: 0 10px;
+        }
+
+        /* Ensures that columns have enough spacing */
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Adds some space to the top */
+        .container {
+            width: 100vw; /* Full width of the viewport */
+            margin-top: 2rem; /* You can adjust this value for more or less space */
         }
     </style>
 
+    <div class="justify-content-center w-100">
+        <div id="product-details" class="maindiv p-3 m-2 shadow rounded">
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div>Chat</div>
+                </div>
 
-    <div class="d-flex justify-content-center">
-        <div id="product-details" class="maindiv p-3 m-2 shadow rounded"></div>
+                <!-- Vertical Divider -->
+                <div class="col-auto">
+                    <div class="vertical-divider"></div>
+                </div>
+
+                <div class="col">
+                    <div>Add to cart</div>
+                </div>
+
+                <!-- Vertical Divider -->
+                <div class="col-auto">
+                    <div class="vertical-divider"></div>
+                </div>
+
+                <div class="col btn-success">
+                    <button type="button" class="btn btn-success">BUY NOW</button>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script>
         async function fetchProductDetails() {
             const params = new URLSearchParams(window.location.search);
