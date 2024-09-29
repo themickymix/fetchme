@@ -13,7 +13,7 @@ async function tery() {
       // Create card HTML for each product
       const card = `
         <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
-          <div class="card" onclick="openProductPage(${product.id})">
+          <div class="card carddata" onclick="openProductPage(${product.id})">
             <div class="picture-wrapper common-img fs-card-img img-w100p d-flex justify-content-center">
               <img src="${
                 product.image
